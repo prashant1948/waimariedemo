@@ -213,8 +213,9 @@
 				<div id="revolutionSlider" class="slider rev_slider manual" data-version="5.4.8">
 					<ul>
 						<li data-transition="fade">
-							<img src="images/waimarie/Dec DSC01034.JPG" alt="" data-bgposition="center center"
+							<img src="images/waimarie/Nov DSC02000.JPG" alt="" data-bgposition="center center"
 								data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg">
+
 						</li>
 						<li data-transition="fade">
 							<img src="images/waimarie/Mar P1000854.JPG" alt="" data-bgposition="center center"
@@ -223,6 +224,7 @@
 					</ul>
 				</div>
 			</div>
+
 
 			<section class="section bg-color-quaternary custom-padding-3 border-0 my-0">
 				<div class="container">
@@ -344,7 +346,28 @@
 				</div>
 			</section>
 
-			<div class="image-gallery sort-destination full-width">
+			<!-- Load Facebook SDK for JavaScript -->
+			<div id="fb-root"></div>
+			<script>
+				window.fbAsyncInit = function () {
+					FB.init({
+						xfbml: true,
+						version: 'v8.0'
+					});
+				};
+
+				(function (d, s, id) {
+					var js, fjs = d.getElementsByTagName(s)[0];
+					if (d.getElementById(id)) return;
+					js = d.createElement(s); js.id = id;
+					js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+					fjs.parentNode.insertBefore(js, fjs);
+				}(document, 'script', 'facebook-jssdk'));</script>
+
+			<!-- Your Chat Plugin code -->
+			<div class="fb-customerchat" attribution=setup_tool page_id="598476320294201">
+			</div>
+			<!-- <div class="image-gallery sort-destination full-width">
 				<div class="row image-gallery sort-destination lightbox"
 					data-plugin-options="{'delegate': 'a.lightbox-portfolio', 'type': 'image', 'gallery': {'enabled': true}}">
 					<div class="isotope-item">
@@ -371,7 +394,7 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</div> -->
 
 			<!-- <section class="section custom-padding-3 border-0 my-0">
 					<div class="container">
